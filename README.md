@@ -156,7 +156,7 @@ Once the containers are healthy:
 
 | Service | URL |
 |---------|-----|
-| Frontend (Vue) | http://localhost:5173 |
+| Frontend (Vue) | http://localhost:8080 |
 | Backend API | http://localhost:3000/api/v1 |
 | Swagger UI | http://localhost:3000/api/docs |
 | Health probe | http://localhost:3000/api/v1/health |
@@ -186,7 +186,7 @@ Defined in `.env` (copy from `.env.example`):
 | `POSTGRES_DB` | `geocatalog` | DB name |
 | `POSTGRES_PORT` | `5432` | Host port for Postgres |
 | `BACKEND_PORT` | `3000` | Host port for the NestJS API |
-| `FRONTEND_PORT` | `5173` | Host port for nginx (frontend) |
+| `FRONTEND_PORT` | `8080` | Host port for nginx (frontend) |
 | `VITE_API_BASE_URL` | `http://localhost:3000/api/v1` | Baked into the frontend build |
 
 The frontend container proxies `/api/*` requests to the backend container via
